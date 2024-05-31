@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .container form label {
+            margin-bottom: 5px;
+        }
+        .container form input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container form button {
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Profile</h2>
+        <form method="POST">
+            <label for="username">Username:</label>
+            <input type="text" name="username" value="{{ current_user.username }}" required>
+            <label for="password">New Password:</label>
+            <input type="password" name="password">
+            <button type="submit">Update</button>
+        </form>
+        <a href="/chat">Back to Chat</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+message,attack_type
+"Your account has been compromised, click here to reset your password",phishing
+"'; DROP TABLE users; --",sql_injection
+"<script>alert('XSS');</script>",xss
+"GET /index.php HTTP/1.1",legitimate
+"Can you help me with my account settings?",legitimate
+"UNION SELECT username, password FROM users;",sql_injection
+"Please verify your account by clicking on this link",phishing
+"DELETE FROM orders WHERE id = 1;",sql_injection
+"<img src='x' onerror='alert(1)'>",xss
+"POST /login HTTP/1.1",legitimate
+"I forgot my password, how can I reset it?",legitimate
+"SELECT * FROM users WHERE username = 'admin'--",sql_injection
+"To update your account information, visit this link",phishing
+"'; EXEC xp_cmdshell('dir'); --",sql_injection
+"<iframe src='javascript:alert(1)'></iframe>",xss
+"How do I change my profile picture?",legitimate
+"INSERT INTO users (username, password) VALUES ('admin', 'password');",sql_injection
+"To protect your account, click here",phishing
+"DROP TABLE products;",sql_injection
+"<body onload='alert(1)'>",xss
+"Could you assist me with my subscription?",legitimate
+"UPDATE users SET password = 'newpass' WHERE username = 'admin';",sql_injection
+"Your account has unusual activity, please verify",phishing
+"<link rel='stylesheet' href='data:text/css,body{background-color:red;}'>",xss
+"What is the refund policy?",legitimate
+"INSERT INTO accounts (username, password) VALUES ('user', 'pass');",sql_injection
+"We detected a login attempt from a new device, verify here",phishing
+"<object data='javascript:alert(1)'></object>",xss
+"I need help with my order",legitimate
+"SELECT * FROM orders WHERE id = 1;",sql_injection
+"Important security update, click here",phishing
+"<audio src='javascript:alert(1)'></audio>",xss
+"How do I update my payment information?",legitimate
+"DELETE FROM users WHERE id = 1;",sql_injection
+"Your account will be locked if not verified",phishing
+"<form action='javascript:alert(1)'>",xss
+"Can you assist me with my password reset?",legitimate
+"UPDATE products SET price = 0 WHERE id = 1;",sql_injection
+"Unusual login attempt detected, verify your account",phishing
+"<svg onload='alert(1)'>",xss
+"I need to change my email address",legitimate
+"SELECT * FROM information_schema.tables;",sql_injection
+"Your account has been flagged, verify here",phishing
+"<img src='data:image/svg+xml;base64,PHN2ZyBvbmxvYWQ9YWxlcnQoMSk+'>",xss
+"What are the shipping options?",legitimate
+"DROP DATABASE test;",sql_injection
+"Confirm your account information to continue",phishing
+"<marquee onstart='alert(1)'>",xss
+"How do I track my order?",legitimate
